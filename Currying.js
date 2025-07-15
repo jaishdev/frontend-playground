@@ -1,3 +1,5 @@
+
+
 function add(a) {
     return function (b) {
         return function (c) {
@@ -21,5 +23,8 @@ function infiniteSum(a) {
     };
 }
 
-// console.log(infiniteSum(1)(1)(1)(0)(8)())
-console.log(add(1))
+console.log(infiniteSum(1)(1)(1)(0)(8)())
+const Sum = infiniteSum(1)(2)(3)(0)(1)()
+
+
+document.getElementById("result").textContent = `Sum is ${Sum}`;
