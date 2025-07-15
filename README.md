@@ -84,3 +84,10 @@ Either you use bind which is built in js fn or do the below
     const x = add(1);
     console.log(x(2, 3)); // o/p - 6
 ```
+Now one of the main doubt you might be having is where do we use this in real life.
+
+lets first see the code then go into explanation 
+
+```js
+    
+```
