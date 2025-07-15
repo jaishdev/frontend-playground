@@ -61,6 +61,7 @@ function curriedIdFnc(id){
        return elem
     }
 }
-(curriedIdFnc('result')("yoyoyo"))
-(curriedIdFnc('re')("i am re"))
-(curriedIdFnc('su')("i am su"))
+// (curriedIdFnc('result')("yoyoyo"))
+// (curriedIdFnc('re')("i am re"))
+// (curriedIdFnc('su')("i am su"))
+curriedIdFnc('result')("I am the curried text");
