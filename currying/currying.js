@@ -55,16 +55,16 @@
 //   }
 // }
 
-// function curriedIdFnc(id){
-//     return function (text){
-//        const elem = document.querySelector("#"+id).innerHTML = text;
-//        return elem
-//     }
-// }
-// // (curriedIdFnc('result')("yoyoyo"))
-// // (curriedIdFnc('re')("i am re"))
-// // (curriedIdFnc('su')("i am su"))
-// curriedIdFnc('result')("I am the curried text");
+function curriedIdFnc(id){
+    return function (text){
+       const elem = document.querySelector("#"+id).innerHTML = text;
+       return elem
+    }
+}
+// // // (curriedIdFnc('result')("yoyoyo"))
+// // // (curriedIdFnc('re')("i am re"))
+// // // (curriedIdFnc('su')("i am su"))
+curriedIdFnc('result')("I am the curried text");
 
 // function userArg(a,b,c){
 //     return `${a}_${b}_${c}`
