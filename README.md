@@ -1,29 +1,31 @@
-# 🌟 My Front-End Learning Repo
+# 🌟 My FullStack Learning Repo
 
-This is my folder where I keep everything I’m learning about **front-end development**.
+This is my folder where I keep everything I’m learning about **full-stack development**.
 
-I’m learning things like **HTML**, **CSS**, **JavaScript**, and **React**. Inside this folder, you will see more folders for each topic.
+I’m learning **front-end** (HTML, CSS, JavaScript, React) and **back-end** (Node.js, Express, MongoDB). Inside this folder, you will see more folders for each topic.
 
 ## 📁 What’s Inside
 
-- `JavaScript/` – All my JavaScript notes, practice code, and small projects
-- `React/` – What I’m learning about React, with code and examples
-- `CSS/` – Styling with CSS, animations, layout, etc.
-- `HTML/` – Basic structure of webpages
+- `JavaScript/` – My JavaScript notes, practice, and small programs
+- `React/` – React basics, components, hooks, and small apps
+- `Node/` – Backend code using Node.js
+- `Express/` – My Express.js projects and examples
+- `MongoDB/` – Working with databases using MongoDB
+- `FullStack Projects/` – Apps I made using both front-end and back-end
 - `Challenges/` – Code problems and my answers
 
 ## 📝 Why I Made This
 
-- To **practice coding every day**
+- To **practice full-stack development**
 - To **remember what I learn**
-- To **see how much I improve over time**
+- To **track my progress** and see how I improve
 
 ## 🎯 What I’m Doing Now
 
-- Learning more about **React**
-- Solving small **JavaScript problems**
-- Trying to make my code clean and easy to read
+- Learning **React and backend together**
+- Building small **full-stack projects**
+- Improving my coding skills step by step
 
 ---
 
-Thanks for visiting! 😊 I will keep adding new things here as I learn more.
+Thanks for checking out my learning repo! 😊 I’m updating it as I keep learning.
