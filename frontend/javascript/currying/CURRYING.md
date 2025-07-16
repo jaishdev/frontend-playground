@@ -145,6 +145,6 @@ console.log(result);
 // Output: abc has admin access to project Project123
 
 ```
-👏 Final Thoughts
+👏 Final Thoughts-
 
 Currying is super powerful in functional programming and is often used in libraries like Lodash, Ramda, and even React when dealing with HOCs (Higher-Order Components) and handlers.
