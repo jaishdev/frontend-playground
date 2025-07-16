@@ -8,7 +8,7 @@ It is **transformation of functions** that translates a function **from callable
 Without currying a simple sum function is like - 
 ```js
 //Normal Function
-    function sum(a+b+c){
+    function sum(a, b, c){
         return a+b+c;
     }
 
@@ -46,7 +46,7 @@ So when the check is if (b), it treats 0 as false and thinks the input is done â
 ```js
     function infiniteSum(a) {
         return function (b) {
-            if (arguments.length === 0) return a;
+            if (b === undefined) return a;
             return infiniteSum(a + b);
         };
     }
