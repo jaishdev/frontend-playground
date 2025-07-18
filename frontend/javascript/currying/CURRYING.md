@@ -1,9 +1,9 @@
-# Currying
+# 🍛 Currying
 **Currying** is when a function takes **one input at a time** and keeps **returning another function** until all the inputs are given. 
 
 It is **transformation of functions** that translates a function **from callable as f(a, b, c) into callable as f(a)(b)(c)**.
 
-## A simple comparable code.
+## A simple comparable code 😄.
 
 Without currying a simple sum function is like - 
 ```js
@@ -28,7 +28,7 @@ but in currying it becomes a chain of function-
 
     sum(1)(2)(3); //function call
 ```
-## Infinite currying
+## ♾️ Infinite currying
 
 ```js
     function sum(a){
@@ -55,7 +55,7 @@ So when the check is if (b), it treats 0 as false and thinks the input is done �
 The empty () is what tells the function “I’m done now, give me the final answer.”
 Without that last (), it just keeps expecting more numbers.
 
-## Currying and Partial Applications
+## Currying and Partial Applications 🤏
 
 They look similar but are not..
 currying - Pass one arguments at a time
@@ -143,8 +143,15 @@ const result = step2("admin");
 
 console.log(result);
 // Output: abc has admin access to project Project123
-
 ```
-👏 Final Thoughts-
+
+## 👏 Final Thoughts-
 
 Currying is super powerful in functional programming and is often used in libraries like Lodash, Ramda, and even React when dealing with HOCs (Higher-Order Components) and handlers.
+
+**P.S.** – This analogy is just for beginners 😅 Something I came up with to make it relatable.  
+Please don't laugh 🙅‍♀️
+
+Currying is like making curry (yes, sabji 🍛) — you add one ingredient (argument) at a time.  
+Only after the current one is fully cooked (processed), you add (pass) the next one.  
+When all ingredients are in, the dish (final function result) is ready to serve!
