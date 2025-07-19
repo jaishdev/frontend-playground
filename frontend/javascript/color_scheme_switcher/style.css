@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    min-height:100vh ;
+    background-color: #111;
+    color: #fff;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-changer{
+    text-align: center;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 10%;
+    box-shadow: 0 0 5px 2px rgba(73, 72, 72, 0.6); /* red glow */
+}
+button{
+    all: unset;
+}
+
+#red{
+    background-color: red;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#gray{
+    background-color: gray;
+}
+
+#green{
+    background-color: green;
+}
