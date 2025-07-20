@@ -123,8 +123,10 @@
 // }
 
 
-let a = 10;
-let b = 20;
-[a,b]=[b,a]
-console.log(a,b)
+// let a = 10;
+// let b = 20;
+// [a,b]=[b,a]
+// console.log(a,b)
 
+// process.stdout.write("hello ")
+// process.stdout.write("world")
