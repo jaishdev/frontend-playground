@@ -99,12 +99,56 @@ function getArea(shape) {
 //     return student;
 // }
 const newStudent = (student) => {
-    return `i am ${student.name} from school ${student.school} of age ${student.age} and my gender is ${student.gender}`;
+    return `i am ${student.name} from school ${student.school} of age ${student.age} and my gender is ${student.gender} hello this is username ${student.username} from interface User`;
 };
-console.log(newStudent({ school: "lions", name: "jai", age: 10 }));
+// console.log(newStudent({username:"blablabla" , school:"lions",name:"jai",age:10}))
 const s = {
     school: "",
     name: "",
     age: 0
 };
-console.log(newStudent(s));
+let user = "jaish";
+let users = null;
+let c = 33; // error
+const obj = { x: 1, y: "hi" };
+// console.log(obj);
+class Axis {
+    constructor() {
+        this.x = '20px';
+        this.y = '20px';
+    }
+}
+// Axis.x = '90px' 
+// console.log(Axis.x)
+// let Axis1 = new Axis
+// Axis1.x = '70px'
+// console.log(Axis1.x)
+// class Student {
+//   name:string; //this is impt in ts 
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
+// // //the above code and the below code are same.
+// class Student {
+//   age?:number;
+//   constructor(public name: string ,public surname:string = 'vishwa'){} 
+// }
+//
+// const stuv = new Student("hi","jbchsd");
+// stuv.age = 89
+// console.log(stuv)
+// const stuv1 = new Student("hello");
+// console.log(stuv1)
+class Student {
+    constructor(name, surname = 'vishwa', roll = 7) {
+        this.name = name;
+        this.surname = surname;
+        this.roll = roll;
+        // age is optional, so you can assign later
+    }
+}
+const stuv = new Student("hi", undefined, undefined);
+console.log(stuv);
+stuv.ages = 6;
+console.log(stuv);
