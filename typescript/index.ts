@@ -1,5 +1,6 @@
-let a: number = 12;
-a = 6;
+// let a:
+//  number = 12;
+// a = 6;
 let arr: Array<number> = [1, 2, 3, 4];
 let arr1: number[] = [1, 2, 3, 4];
 const tup = [1, "jai", true] as const;
@@ -37,7 +38,7 @@ enum orderStatus {
     CANCELLED = "cancelled",
 }
 
-function updateOrderStatus(status: orderStatus): string {
+function updateOrderStatus(status: orderStatus):string {
     switch (status) {
         case orderStatus.PENDING:
             console.log("pending");
@@ -204,3 +205,42 @@ console.log(stuv)
 
 stuv.ages=6
 console.log(stuv)
+
+class User{
+    constructor(
+        protected name : string , 
+        public age:number = 24 , 
+        public gender : string = "unknown"){}
+        changeName(){
+            this.name = "jaishree"
+        }
+}
+class Admin extends User{
+    constructor(name :string){
+        super(name);
+    }
+}
+// let admin1 = new Admin("hello")
+// console.log(admin1.username = "fhdvfh")
+// let user1 = new User("jaish",23,"female")
+// console.log(user1)
+// let user2 = new User("jaish",undefined,"female")
+// console.log(user2)
+// console.log(user1.changeName())
+// console.log(user1)
+
+class Dog{
+    constructor(public _name:string , public run:boolean , public _bark:boolean , public age:number){}
+    get name(){
+        return this._name;
+    }
+    set bark(value:boolean){
+        this._bark = value
+    }
+}
+
+let dog1 = new Dog("buby" , true , false , 4)
+console.log(dog1)
+console.log(dog1.name)
+console.log(dog1.bark = true)
+console.log(dog1)
