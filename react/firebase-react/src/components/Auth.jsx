@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { auth} from "../config/firebase";
-import { createUserWithEmailAndPassword , signOut} from "firebase/auth";
+import { auth , provider} from "../config/firebase";
+import { createUserWithEmailAndPassword , signOut ,signInWithPopup} from "firebase/auth";
 
 export const Auth = ()=>{
     const [email, setEmail] = useState("")
@@ -10,7 +10,16 @@ export const Auth = ()=>{
     const signUp = async()=>{
         try {
             const userCredential =  await createUserWithEmailAndPassword(auth, email, password)
-                const user = userCredential.user;
+            const user = userCredential.user;
+            console.log("User signed up:", user.email);
+        } catch (error) {
+            console.error(error)
+        }
+    }
+    const signInWithGoogle = async()=>{
+        try {
+            const userCredential =  await signInWithPopup(auth, provider)
+            const user = userCredential.user;
             console.log("User signed up:", user);
         } catch (error) {
             console.error(error)
@@ -19,6 +28,7 @@ export const Auth = ()=>{
     const logOut = async()=>{
         try {
             await signOut(auth)
+            console.log(auth.currentUser.email)
         } catch (error) {
             console.error(error);
             
@@ -31,6 +41,7 @@ export const Auth = ()=>{
             <input type="password" placeholder="password..." onChange={(e)=>setPassword(e.target.value)}/>
             <br />
             <button onClick={signUp}>Sign Up</button>
+            <button onClick={signInWithGoogle}>Sign In with google</button>
             <button onClick={logOut}>Log Out</button>
         </div>
     )
