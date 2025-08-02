@@ -23,6 +23,7 @@ export const Auth = ({ onSuccess })=>{
             const userCredential =  await signInWithPopup(auth, googleProvider)
             const user = userCredential.user;
             console.log("User signed up:", user);
+            navigate('/dashboard');
         } catch (error) {
             console.error(error)
         }
